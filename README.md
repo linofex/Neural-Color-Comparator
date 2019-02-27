@@ -9,8 +9,8 @@ The developed NN is able to calculate the correct difference between two colors.
 Read the ["report"](https://github.com/linofex/Intelligent-Transportation-System/blob/master/Contiki%20Project%20-%20NES%202017-2018.pdf)
 for more information.
 
- ["Part_1.m"](https://github.com/linofex/Intelligent-Transportation-System/blob/master/Contiki%20Project%20-%20NES%202017-2018.pdf) and  ["Part_2.m"](https://github.com/linofex/Intelligent-Transportation-System/blob/master/Contiki%20Project%20-%20NES%202017-2018.pdfdd
-scripts performs the specification requirements ddcc
+ ["Part_1.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/Part_1.m) and  ["Part_2.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/Part_2.m)
+scripts performs the specification requirements
 
 
 
