@@ -1,0 +1,71 @@
+[System]
+Name='Color_fuzzy_part_2'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=10
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Light'
+Range=[0 100]
+NumMFs=2
+MF1='dark':'zmf',[0 15]
+MF2='bright':'smf',[85 100]
+
+[Input2]
+Name='Chroma'
+Range=[0 100]
+NumMFs=2
+MF1='unsaturated':'zmf',[9.2 90.2]
+MF2='saturated':'smf',[10.2536997885835 90.4]
+
+[Input3]
+Name='Hue'
+Range=[0 360]
+NumMFs=8
+MF1='Red':'dsigmf',[0.217 25.2772808586762 -0.19 333]
+MF2='Orange':'gaussmf',[16.6141929984785 45]
+MF3='Yellow':'gaussmf',[22.1522573313047 90]
+MF4='Green':'gaussmf',[21.4685456852767 180]
+MF5='Blue':'gaussmf',[22.9727113065382 270]
+MF6='Purple':'gaussmf',[14.6998003896003 315]
+MF7='Light_ Blue':'gaussmf',[15.6569966940395 225]
+MF8='Yellow_ Green':'gaussmf',[16.0672236816562 135]
+
+[Input4]
+Name='de_{math}'
+Range=[0 8]
+NumMFs=5
+MF1='nodiff':'trimf',[0 0 1.5]
+MF2='expdiff':'trimf',[0.3 1.5 2.75]
+MF3='unexpdiff':'trimf',[1.5 2.75 4.25]
+MF4='cleardiff':'trimf',[2.75 4.25 5.428]
+MF5='diffcolors':'sigmf',[7.25 4.88740071556351]
+
+[Output1]
+Name='de_{fuzzy}'
+Range=[0 8]
+NumMFs=5
+MF1='nodiff':'trimf',[0 0 1.5]
+MF2='expdiff':'trimf',[0.3 1.5 2.75]
+MF3='unexpdiff':'trimf',[1.5 2.75 4.25]
+MF4='cleardiff':'trimf',[2.75 4.25 5.428]
+MF5='diffcolors':'sigmf',[7.25 4.88740071556351]
+
+[Rules]
+1 0 0 0, 1 (1) : 1
+-1 2 3 3, 2 (1) : 1
+-1 2 5 2, 3 (1) : 1
+-1 1 0 2, 3 (1) : 1
+-1 1 0 3, 4 (1) : 1
+-1 2 6 2, 3 (1) : 1
+-1 2 5 3, 4 (1) : 1
+-1 2 6 3, 4 (1) : 1
+-1 2 3 4, 3 (1) : 1
+-1 2 3 5, 4 (1) : 1
