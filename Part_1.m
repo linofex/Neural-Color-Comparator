@@ -1,6 +1,6 @@
 clear all
-load("IS_dataset.mat");
-load('200_indexes.mat');
+load("data/IS_dataset.mat");
+load('data/200_indexes.mat');
 
 addpath(genpath('optprop'));
 rng(999);

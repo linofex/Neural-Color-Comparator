@@ -7,7 +7,7 @@ disp("**********************");
 disp("Calculate the C in percentage")
 C_perc = c2cperc(L_100,C_100);
 fuzzy_inputs = fuzzy_inputs(L_100, C_perc, H_100, target_de, 12);
-fis = readfis('Color_fuzzy_part_2');
+fis = readfis('scripts/Color_fuzzy_part_2');
 disp("Fuzzy inference system evaluation")
 out = evalfis(fuzzy_inputs, fis);
 disp("Indexes replacement");
