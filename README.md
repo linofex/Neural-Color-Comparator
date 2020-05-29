@@ -9,7 +9,7 @@ The developed NN is able to calculate the correct difference between two colors.
 Read the [report](https://github.com/linofex/Neural-Color-Comparator/blob/master/report.pdf)
 for more information.
 
- ["Part_1.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/Part_1.m) and  ["Part_2.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/Part_2.m)
+ ["Part_1.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/scripts/Part_1.m) and  ["Part_2.m"](https://github.com/linofex/Neural-Color-Comparator/blob/master/scripts/Part_2.m)
 scripts performs the specification requirements
 
 
