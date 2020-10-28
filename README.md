@@ -4,7 +4,7 @@ Neural Network project for Intelligent Systems course
 
 Project specification can be read from the PDF file: [ "Neural-Color-Comparator Specs"](https://github.com/linofex/Neural-Color-Comparator/blob/master/Neural-Color-Comparator%20Specs.pdf)
 
-The developed NN is able to calculate the correct difference between two colors. Starting from the DeltaE formula, the Fuzzy Inference System corrects the inaccurances rised from it.
+The developed NN is able to calculate the correct difference between two colors. Starting from the DeltaE formula, the Fuzzy Inference System corrects the inaccuracies raised from it.
 
 Read the [report](https://github.com/linofex/Neural-Color-Comparator/blob/master/report.pdf)
 for more information.
